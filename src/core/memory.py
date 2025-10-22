@@ -5,7 +5,6 @@ class HybridMemory:
 
     def store(self, task, result):
         self.cache[task["name"]] = result
-        # Пример: по размеру/давности выбрасываем в архив
         if len(self.cache) > 10:
             key, val = self.cache.popitem()
             self.archive[key] = val

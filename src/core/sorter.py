@@ -1,4 +1,5 @@
 class TaskSorter:
     def sort(self, tasks):
-        # Самый простой: сортировка по типу (compute > sensor)
-        return sorted(tasks, key=lambda x: x["type"], reverse=True)
+        # Явная приоритезация: 'compute' выше, чем 'sensor'
+        priority = {'compute': 2, 'sensor': 1}
+        return sorted(tasks, key=lambda x: priority.get(x['type'], 0), reverse=True)
