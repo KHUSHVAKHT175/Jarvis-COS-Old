@@ -1,0 +1,27 @@
+# processed
+
+
+C:\Users\usuario>setup_jarvis_cos.bat
+Initialized empty Git repository in C:/Users/usuario/Jarvis-COS/.git/
+[master (root-commit) 9821b56] Initial commit Jarvis-COS
+ 9 files changed, 9 insertions(+)
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+ create mode 100644 src/core/emulator.py
+ create mode 100644 src/core/memory.py
+ create mode 100644 src/core/orchestrator.py
+ create mode 100644 src/core/sensors.py
+ create mode 100644 src/core/sorter.py
+ create mode 100644 src/main.py
+ create mode 100644 src/modules/plugins.py
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (14/14), 925 bytes | 132.00 KiB/s, done.
+Total 14 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/KHUSHVAKHT175/Jarvis-COS.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+Jarvis-COS setup complete!
+Presione una tecla para continuar . . .
