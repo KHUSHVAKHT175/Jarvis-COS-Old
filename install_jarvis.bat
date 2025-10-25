@@ -1,9 +1,9 @@
 @echo off
-title Установка Jarvis-COS
+title Установка Jarvis-COS-Old
 color 0A
 
 echo ===========================================
-echo     УСТАНОВКА ПРОЕКТА JARVIS-COS v1.0.0
+echo     УСТАНОВКА ПРОЕКТА JARVIS-COS-Old v1.0.0
 echo ===========================================
 echo.
 
@@ -16,14 +16,14 @@ if %errorlevel% neq 0 (
 )
 
 :: Создаём папку для установки
-set "TARGET_DIR=%USERPROFILE%\Jarvis-COS"
+set "TARGET_DIR=%USERPROFILE%\Jarvis-COS-Old"
 if not exist "%TARGET_DIR%" (
     mkdir "%TARGET_DIR%"
 )
 
 echo.
-echo Клонирование репозитория...
-git clone https://github.com/KHUSHVAKHT175/Jarvis-COS.git "%TARGET_DIR%"
+echo Клонирование репозитория старой версии...
+git clone https://github.com/KHUSHVAKHT175/Jarvis-COS-Old.git "%TARGET_DIR%"
 if %errorlevel% neq 0 (
     echo Ошибка при клонировании!
     pause
@@ -48,7 +48,7 @@ if exist requirements.txt (
 
 echo.
 echo ===========================================
-echo   УСТАНОВКА ЗАВЕРШЕНА УСПЕШНО
+echo   УСТАНОВКА СТАРОЙ ВЕРСИИ ЗАВЕРШЕНА УСПЕШНО
 echo   Папка: %TARGET_DIR%
 echo ===========================================
 pause
